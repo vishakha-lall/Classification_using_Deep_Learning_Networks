@@ -1,3 +1,4 @@
+#XNOR implementation
 import numpy as np
 x0=int(1)
 x1=int(input("Enter variable 1 "))
