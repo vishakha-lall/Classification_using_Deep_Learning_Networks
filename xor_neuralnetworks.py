@@ -1,5 +1,5 @@
 #XNOR implementation
-import numpy as np
+import numpy as np  
 x0=int(1)
 x1=int(input("Enter variable 1 "))
 x2=int(input("Enter variable 2 "))
