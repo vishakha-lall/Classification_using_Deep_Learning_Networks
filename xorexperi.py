@@ -21,7 +21,7 @@ def NeuralNetwork(layers):
     r = 2*np.random.random( (layers[i] + 1, layers[i+1])) - 1
     weights.append(r)
 
-def fit(X, y, epochs, learning_rate=0.2):
+def fit(X, y, epochs, learning_rate=0.5):
     global weights, activation, activation_prime
 
 
@@ -33,7 +33,7 @@ def fit(X, y, epochs, learning_rate=0.2):
         if k % 10000 == 0: print 'Iterations:', k
         
         i = np.random.randint(X.shape[0])
-        a = [X[i]]
+        a = [X[i]] # selecting a random input
 
         for l in range(len(weights)):
                 dot_value = np.dot(a[l], weights[l])
@@ -43,7 +43,9 @@ def fit(X, y, epochs, learning_rate=0.2):
         error = y[i] - a[-1]
         deltas = [error * activation_prime(a[-1])]
 
-        for l in range(len(a) - 2, 0, -1): 
+        for l in range(len(a) - 2, 0, -1):
+            if(k == 0):
+                print l 
             deltas.append(deltas[-1].dot(weights[l].T)*activation_prime(a[l]))
 
         deltas.reverse()
@@ -61,6 +63,10 @@ def predict(x):
     for l in range(0, len(weights)):
         a = activation(np.dot(a, weights[l]))
     return a
+
+
+#error reduction
+#variation of weights
 
 print "ENter number of Iterations : "
 
