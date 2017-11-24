@@ -1,4 +1,4 @@
-# Classification_using_Deep_Learning_Networks
+# Classification using Deep Learning Networks
 ## Final Year Project
 
 ### Abstract  
