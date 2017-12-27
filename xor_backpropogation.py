@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-iterations = 60000           # Number of iterations
+iterations = 60000                              # Number of iterations
 inputLayerSize, hiddenLayerSize, outputLayerSize = 2, 3, 1
 
 X = np.array([[0,0], [0,1], [1,0], [1,1]])
