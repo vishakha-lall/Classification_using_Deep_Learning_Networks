@@ -1,5 +1,5 @@
 # Classification using Deep Learning Networks
-## Final Year Project
+Published in [IEEE](https://ieeexplore.ieee.org/abstract/document/8493883) 2018 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT) held at IISc Bangalore.
 
 ### Abstract  
 The project aims to use Deep Convolutional Neural Networks(DCNN) for Semantic Segmentation of Traffic Scenes with potential applications in Intelligent Transportation Systems.
